@@ -4,7 +4,24 @@
 <sup>-</sup>
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-![Refined BitBucket](./logo-full.svg)
+![Refined BitBucket Server](./logo-full.svg)
+
+Forked and originally inspred by [Refined Bitbucket](https://github.com/refined-bitbucket/refined-bitbucket)
+
+## Requirements
+
+Bitbucket Server works off of a different API than Bitbucket Cloud. The goal of this project will be to convert the great extension [Refined Bitbucket](https://github.com/refined-bitbucket/refined-bitbucket) to support features from a Bitbucket Server perspective. 
+
+This requires some additional options to configure certain options. You will need to generate a "personal access token" which you can generate from the "My Account" area in Bitbucket Server. You will also need to provide your Bitbucket Server username, and this value is case-sensitive. So if your account was setup as `Thomas.Anderson`, you will need to use the appropriate casing as Bitbucket Server uses that value to store certain settings in localStorage.
+
+### Current Features
+
+- Ignore Whitespace
+  - Currently this will enable both the "Ignore Whitespace" and "Show Whitespace Characters" options for PR's. These will be separated in the future to individual options.
+
+---
+
+(Below is Refined Bitbucket README. Will be updated as Refined Bitbucket Server makes more progress)
 
 We all know BitBucket lacks some features that we have in other platforms like GitHub, GitLab and others. Originally inspired on Sindre Sorhus' [Refined Github](https://github.com/sindresorhus/refined-github) extension, _refined-bitbucket_ is born as a collaborative project by a few developers to improve upon those holes, and even add some additional functionality that will enhance the overall user experience.
 
