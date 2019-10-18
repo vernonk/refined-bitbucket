@@ -1,7 +1,7 @@
 {
-  "name": "refined-bitbucket",
-  "description": "Chrome extension that improves BitBucket's user interface",
-  "version": "3.18.1",
+  "name": "refined-bitbucket-server",
+  "description": "Chrome extension that improves BitBucket Server's user interface",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/refined-bitbucket/refined-bitbucket.git"
+    "url": "git+https://github.com/vernonk/refined-bitbucket-server.git"
   },
   "keywords": [
     "bitbucket",
@@ -42,20 +42,20 @@
     "syntax-highlight",
     "prism"
   ],
-  "author": "andremw",
+  "author": "vernonk",
   "maintainers": [
     {
-      "name": "Ronald Rey",
-      "email": "reyronald@gmail.com",
-      "url": "http://github.com/reyronald"
+      "name": "Vernon Kesner",
+      "email": "vernonkesner@gmail.com",
+      "url": "http://github.com/vernonk"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/refined-bitbucket/refined-bitbucket/issues",
-    "email": "reyronald@gmail.com"
+    "url": "https://github.com/vernonk/refined-bitbucket-server/issues",
+    "email": "vernonkesner@gmail.com"
   },
-  "homepage": "https://github.com/refined-bitbucket/refined-bitbucket#readme",
+  "homepage": "https://github.com/vernonk/refined-bitbucket-server#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",

@@ -109,19 +109,15 @@ function pullrequestListRelatedFeatures(config) {
     }
 
     // eslint-disable-next-line no-new
-    new SelectorObserver(
-        document.body,
-        'tr[data-qa="pull-request-row"]',
-        function() {
-            if (config.ignoreWhitespace) {
-                ignoreWhitespace(this)
-            }
-
-            if (config.augmentPrEntry) {
-                augmentPrEntry(this)
-            }
+    new SelectorObserver(document.body, 'tr.pull-request-row', function() {
+        if (config.ignoreWhitespace) {
+            ignoreWhitespace(config)
         }
-    )
+
+        if (config.augmentPrEntry) {
+            augmentPrEntry(this)
+        }
+    })
 }
 
 function codeReviewFeatures(config) {

@@ -1,10 +1,10 @@
 {
-  "manifest_version": 2,
-  "name": "Refined Bitbucket",
-  "description": "Improves Bitbucket's user experience",
-  "version": "3.18.1",
-  "author": "Ronald Rey",
-  "homepage_url": "https://github.com/refined-bitbucket/refined-bitbucket",
+  "manifest_version": 1,
+  "name": "Refined Bitbucket Server",
+  "description": "Improves Bitbucket Server's user experience",
+  "version": "0.0.1",
+  "author": "Vernon Kesner",
+  "homepage_url": "https://github.com/vernonk/refined-bitbucket-server",
   "icons": {
     "16": "icon_16px.png",
     "32": "icon_32px.png",
@@ -17,15 +17,11 @@
     "page": "options.html",
     "chrome_style": true
   },
-  "applications": {
-    "gecko": {
-      "id": "refined-bitbucket@refined-bitbucket.org"
-    }
-  },
   "permissions": [
     "activeTab",
     "https://bitbucket.org/*",
     "https://api.bitbucket.org/*",
+    "https://*/*",
     "storage"
   ],
   "content_scripts": [
@@ -35,7 +31,8 @@
         "main.js"
       ],
       "matches": [
-        "https://bitbucket.org/*"
+        "https://bitbucket.org/*",
+        "https://*/*"
       ]
     }
   ],

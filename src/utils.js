@@ -1,15 +1,12 @@
 // @flow
-
+import OptionsSync from 'webext-options-sync'
 import onetime from 'onetime'
 
 export const getApiToken: () => string = onetime(
-    (): string => {
-        const meta: HTMLMetaElement = (document.querySelector(
-            'meta[name="apitoken"]'
-        ): any)
-        const apiTokenContent = meta.content
-        const parsedApiTokenContent = JSON.parse(apiTokenContent)
-        return parsedApiTokenContent.token
+    async (): string => {
+        const optionsStorage = new OptionsSync()
+        const options = await optionsStorage.getAll()
+        return options.personalAccessToken
     }
 )
 

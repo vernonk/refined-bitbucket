@@ -28,7 +28,8 @@ const getRepoPath = () => {
     return (match && match[1]) || ''
 }
 
-export const isPullRequestList = () => getRepoPath() === 'pull-requests'
+export const isPullRequestList = () =>
+    getRepoPath().indexOf('pull-requests') !== -1
 
 export const isPullRequest = () => /^pull-requests\/\d+/.test(getRepoPath())
 
